@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html onselectstart="return false;">
+    <head>
+        <meta charset="utd-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0" name="viewport">
+        <title>Comparador de string e limitador de caractere</title>
+        <link rel="stylesheet" href="css/ctjs.css">
+        <script src="ctjs.js"></script>
+    </head>
+    <body>
+        <div class="selectType" id="selectTypeDiv">
+            <a>Selecione a operação que deseja ser executada:</a><br>
+            <input type="radio" name="type1" id="compare" value="compare" autocomplete="off" onclick="checkType()">
+            <label class="color_link" for="compare">Comparar textos</label>
+            <input type="radio" name="type1" id="checkLength" value="checkLength" autocomplete="off" onclick="checkType()">
+            <label class="color_link" for="checkLength">Limite de caractere</label>
+        </div>
+        <div class="mainDiv" id="checkLengthDiv">
+            <br>
+            <a>Determine a limitação de caracteres:</a><br>
+            <input class="input" id="tamMax" type="text" autocomplete="off" onkeyup="strLenth()"><br><br>
+            <textarea class="textIn" type="text" id="textIn" placeholder="Digite algo" autocomplete="off" onkeyup="strLenth()" maxlength="100"></textarea><br>
+            <a>Tamanho do texto: </a> 
+            <a id="res"></a>
+            <a id="maxValue">- 100</a><br>
+            <a >Situação da restrição: </a>
+            <a id="status"></a><br>
+            
+            <a>Tamanho do texto desconsiderando espaçamentos: </a> 
+            <a id="resWSpaces"></a>
+            <a id="maxValue">- 100</a><br>
+
+            <button type="button" id="btnClear" class="button" onclick="clearText()">Apagar</button>
+            <br>
+            <a>Possui algum tipo de saida?</a><br>
+            <input type="radio" name="out" value="sim" id="out-1" autocomplete="off" onclick="checkOut()">
+            <label for="out-1" class="color_link">Sim</label>
+            <input type="radio" name="out" value="nao" id="out-2" autocomplete="off" onclick="checkOut()">
+            <label for="out-2" class="color_link">Não</label>
+            <br>
+
+            <div class="container" id="container">
+                <a>Selecione um tipo de saída:</a><br>
+                <input type="radio" name="type" value="none" id="data-1" autocomplete="off" onclick="radioCheck()">
+                <label for="data-1" class="color_link">Nenhuma</label>
+                <input type="radio" name="type" value="uppercase" id="data-2" autocomplete="off" onclick="radioCheck()">
+                <label for="data-2" class="color_link">Maiúsculo</label>
+                <input type="radio" name="type" value="lowercase" id="data-3" autocomplete="off" onclick="radioCheck()">
+                <label for="data-3" class="color_link">Minúsculo</label>   
+                <br>
+                <textarea class="textOut" type="text" id="textOut" autocomplete="off" maxlength="100"></textarea><br>
+                <button type="button" class="button" onclick="radioCheck()">Atualizar</button>
+            </div>
+        </div>
+        <div class="mainDiv" id="checkTextDiv">
+            <a >Desconsiderar maiúsculo e minúsculo?</a>
+            <input type="radio" name="type2" id="compare1" value="compareYes" autocomplete="off" onclick="checkTypeIgnore(), checkStrings()">
+            <label class="color_link" for="compare1">Sim</label>
+            <input type="radio" name="type2" id="compare2" value="compareNo" autocomplete="off" onclick="checkTypeIgnore(), checkStrings()">
+            <label class="color_link" for="compare2">Não</label>
+            <br>
+            <textarea class="textInCompare" type="text" id="textOneCompare" placeholder="Insira o texto 1" autocomplete="off" onkeyup="checkStrings()" maxlength="100"></textarea>
+            <textarea class="textInCompare" type="text" id="textTwoCompare" placeholder="Insira o texto 2" autocomplete="off" onkeyup="checkStrings()" maxlength="100"></textarea>
+            <br>
+            <button type="button" id="btnClear" class="button" onclick="clearText1()">Apagar</button><br>
+            <a class="color_link" style="font-size: 120%;" id="resCompare"></a>
+        </div>
+    </body>
+</html>
