@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(5,173,173);
+    height: 100%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+}
+
+.opções{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 150px;
+}
+
+.opções img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: black;
+    float: left;
+    padding-left: 120px;
+}
+
+.opções ul li{
+    display: inline-block;
+    float: right;
+    list-style: none;
+    padding-right: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.opções ul li a:hover{
+      color:rgb(5,173,173); 
+}
+
+.opções ul li a{
+    text-decoration: none;
+    color: rgb(72,78,83);   
+}
+
+.rodape img{
+    width: 15px;
+    height: 15px;
+}
+
+.rodape{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+.Contatos{
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    width: 400px;
+    height: 250px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px black;
+    padding: 5px;
+}
+
+.Contatos img{
+    padding: 10px;
+    display: inline-block;
+   
+}
+
+.delta{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding-top: 20px;
+   
+}
+
+.omega{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.epsilon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.omega img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    box-shadow: black;
+}
+
+.delta img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    box-shadow: black;
+}
+
+.epsilon img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    box-shadow: black;
+}
+
